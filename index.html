@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denise khurlopian">
+    <meta name="Pug" content="Introducción y Primeros Pasos con Pug">
+    <title>Introducción y Primeros Pasos con Pug</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Introducción y primeros pasos con Pug</h1>
+    </header>
+    <p>Pug (anteriormente conocido como Jade) es un motor de plantilla de Node.js. con el que seremos capaces de
+        escribir código HTML de una sintaxis mucho más sencilla, clara y directa, tanto a la hora de escribir como de
+        leer y modificar.</p>
+
+    <p>Para ello, necesitamos un compilador externo como pueda ser Prepros en Windows, o CodeKit en Mac. Aunque para
+        esta ocasión, y sabiendo mi predilección por Atom y sus extensiones, no hará falta instalar ningún software
+        extra más allá de nuestro editor de código.</p>
+
+    <h2>Instalación</h2>
+
+    <p>Muy simple. Instalaremos solo dos extensiones en Atom. La primera de ellas será Autocompiler-Pug-Jade, que nos
+        permitirá <b>compilar</b> el código de Pug dentro de nuestro editor de código. Y la siguiente, Language-pug. Con
+        esta, Atom reconocerá la sintaxis de Pug, y aplicará un <strong>código de colores</strong> a cada elemento, que nos
+        facilitará la lectura del archivo.</p>
+
+    <p>Y ya está. Una vez tengamos esto instalado, ya podemos empezar a trabajar.</p>
+
+    <h2>Primeros pasos</h2>
+
+    <p>En primer lugar, crearemos nuestro archivo, al que le podremos la extensión .pug. En mi caso llamaré al archivo
+        index.pug. Lo primero que debemos decirle al archivo es la localización donde queremos compilar nuestro archivo
+        HMTL. Para ello, en la primera línea de nuestro archivo index.pug escribimos:</p>
+
+    <p>//output:index.html</p>
+
+    <p>Con esto, le estamos diciendo que compile el archivo index.html en la raíz de la carpeta de nuestro proyecto. El
+        nombre el archivo HTML puede ser el que queramos, solo habrá que sustituir la palabra index por la que queramos.
+    </p>
+
+    <p>Si somos más maniáticos del orden y queremos tener cada archivo en su sitio, y queremos mantener nuestro
+        index.html en la carpeta raíz, pero el archivo index.pug en una carpeta diferente, deberemos escribir dentro de
+        este último:</p>
+
+    <p>//output:../index.html</p>
+
+    <p>Si habéis sido observadores, habréis notado que en la barra inferior de Atom aparece en rojo un texto que nos
+        dice Not compile. Esto es porque hasta que no guardamos nuestro archivo Pug, Atom no lo compilará y no creará el
+        HTML. Si intentamos guardar ahora mismo, Atom seguirá sin compilar nada. No nos pongamos nerviosos. Esto ocurre
+        porque aun no hay nada que compilar, solo hemos escrito la localización de donde queremos compilar, pero ese
+        archivo no puede tener aun nada. Así que ¡empecemos a escribir código!</p>
+
+    <p>Cuando estamos escribiendo con Pug, nos ahorramos muchos de los caracteres propios de HTML, como pueden ser los
+        brackets, o las etiquetas de cierre. Así, de un golpe de vista, tendremos un código mucho más limpio y conciso,
+        con el que nos resultará más sencillo trabajar y corregir errores. Pero el movimiento se demuestra andando, así
+        que empecemos.</p>
+
+    <p>En primer lugar, hay que declarar en qué tipo de documento estamos trabajando, por lo que escribimos en nuestro
+        archivo index.pug:</p>
+
+    <p>doctype html</p>
+
+    <p>Si guardamos, veremos cómo las letras rojas de la barra inferior de Atom se convierten a un color verde mucho más
+        amigable, y el texto cambiará a Compiled. Además, en el panel de navegación de Atom aparecerá el archivo
+        index.html dentro de la carpeta de nuestro proyecto. Parece ser que todo va sobre ruedas, así que podemos
+        sentirnos orgullosos por el trabajo realizado, pero esto no ha hecho nada más que empezar.</p>
+
+    <p>Vamos a abrir el recién creado index.html, para ver con nuestros propios ojos que se ha compilado. Efectivamente,
+        dentro del archivo aparece un espléndido:</p>
+
+    <p>&lt;!DOCTYPE html&gt;</p>
+
+    <p>La declaración del tipo de documento es la correcta. Pero puede surgir la pregunta, ¿de verdad merece la pena
+        todo lo que hemos hecho, si solo hemos escrito tres caracteres menos? Acabamos de empezar, no tiremos la toalla
+        aun.</p>
+
+    <p>Como hemos dicho anteriormente, no necesitamos escribir brackets ni etiquetas de cierre. Vamos a ello:</p>
+
+    <pre>html
+    head
+      title Introducción a Pug
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")</pre>
+
+    <p>Guardamos (para compilar), y nuestro archivo HTML se actualizará de forma automática. Veamos que hay nuevo dentro
+        de él:</p>
+
+    <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Introducción a Pug&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</pre>
+
+    <p>Si, parece que esta vez sí que nos hemos ahorrado bastante. Como hemos visto, en jade no hay etiquetas de cierre,
+        y él mismo reconoce el texto dentro de esta etiqueta si insertamos un espacio entre ambos. En Atom se ve de
+        forma más clara, al tener cada elemento un color diferente.</p>
+
+    <p>Vamos a ver una etiqueta simple. Por ejemplo, un (siempre recurrente) “Hola mundo”. Pera organizarnos, todo el
+        texto estará dentro de un &lt;div&gt;, y cada palabra en un parrafo diferente.
+    <p>Facil, verdad?</p>
+        <pre>
+div
+  p ¡Hola
+  p mundo!
+        </pre>
+        <p>Y como siempre, veamos que aparece en nuestro HTML:</p>
+        <pre>
+&lt;div&gt;
+  &lt;p&gt;Hola&lt;/p&gt;
+  &lt;p&gt;mundo!&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+        <p>Esto parece que marcha. Aquí el ahorro a la hora de escribir ha sido bastante en comparación con lo que
+            deberíamos haber hecho si estuviésemos escribiendo en HTML.</p>
+
+        <p>Para acabar con esta introducción, vamos a tratar un elemento básico en HTML: <b>clases e
+            identificadores</b>. Se pondrá un punto antes de la clase, y un asterisco antes del identificador. Igual
+            que si estuviésemos trabajando en CSS. Eso sí, hay que tener en cuenta de que no hay que poner espacio entre ellos, ya que si no
+            se identificarán como un elemento dentro de las etiquetas, y no es lo que queremos. Hagamos un pequeño
+            ejemplo.</p>
+        <pre>
+.container
+  .row.text#heading-a
+    p.text-sm Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</pre>
+
+        <p>Que en nuetro archivo HTML seria:</p>
+        <pre>
+&lt;div class="container"&gt;
+    &lt;div id="heading-a" class="row text"&gt;
+        &lt;p class="text-sm"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <p>Y por ahora esto es todo en esta introducción a Pug. En el futuro esperamos escribir otro artículo
+            profundizando algo más, además de dar algunos detalles con los que podremos optimizar aún más nuestra
+            escritura compatibilizándolo con otras extensiones disponibles para Atom.</p>
+
+        <p title="Nombre del autor">Por Alfonso Serrano</p>
+        <footer>
+            <p>Publicado el <time datetime="2017-01-09">9 de enero de 2017</time> y actualizado el 7 enero de 2017</p>
+
+            <pre>
+https://www.silocreativo.com
+info@silocreativo.com
+Calle Sales y Ferré, 2
+Sevilla 41004 (España)
+</pre>
+        </footer>

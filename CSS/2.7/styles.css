@@ -1,0 +1,28 @@
+.color-square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+    float: left;
+    color: white;
+}
+
+.dim-gray {
+    background-color: #696969;
+}
+
+.indian-red {
+    background-color: #CD5C5C;
+}
+
+.fire-brick {
+    background-color: #B22222;
+}
+
+.dodger-blue {
+    background-color: #1E90FF;
+}

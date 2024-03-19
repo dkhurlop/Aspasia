@@ -1,0 +1,45 @@
+body {
+    font-family: Georgia, Cambria, serif;
+    font-size: 1rem;
+    background-color: #cfc;
+}
+
+h1 {
+    color: #f00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #a00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+.datos-libro li {
+    color: #00f;
+}
+
+.datos-libro li .verde {
+    color: #060;
+}
+
+.datos-libro li span {
+    color: #00f; 
+}
+
+.principal {
+    color: #00f;   
+}
+
+.azul {
+    color: #00f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blanco {
+    color: #fff;
+    background-color: #000;
+    font-style: italic;
+}

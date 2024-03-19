@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Verdana;
+}
+h1 {
+    font-family: Georgia, Verdana;
+    font-size: 32px;
+    font-variant: small-caps;
+}
+h2 {
+    font-family: Georgia,serif, sansserif, cursive, fantasy, monospace, Verdana;
+    font-size: 24px;
+    font-style: italic;
+    font-variant: small-caps;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+ul li strong {
+    font-weight: lighter;
+}

@@ -1,0 +1,37 @@
+.rojo {
+    text-align: center;
+    color: #FF6347;
+}
+
+.p1 {
+    text-indent: 10%;
+}
+
+#div2 {
+    text-align: right;
+    color: #008080;
+}
+
+.p2 {
+    text-indent: 50px;
+}
+
+#div3 {
+    text-align: justify;
+    color: #8B4513;
+}
+
+.p3 {
+    text-indent: 20%;
+}
+
+.s1{
+    text-decoration: overline;
+}
+
+.s2 {
+    text-decoration: line-through;
+}
+.p4 {
+    word-spacing: 15em;
+}

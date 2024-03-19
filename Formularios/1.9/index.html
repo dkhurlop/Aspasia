@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contratación - Almacenamiento en la nube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside>
+    <p>Los mejores planes de almacenamiento en la nube. Pruebelos gratis.</p>
+  </aside>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Elija su plan</legend>
+      <label for="plan">Plan<span class="required">*</span></label>
+      <select id="plan" name="plan" required>
+        <option value="" selected disabled>Escoja una opción de la lista</option>
+        <option value="gratuito">Gratuito</option>
+        <option value="premium">Premium</option>
+        <option value="profesional">Profesional</option>
+      </select>
+      <label for="facturacion"><b>Opciones de facturación</b><span class="required">*</span></label>
+      <br>
+      <label><input type="radio" name="facturacion" value="anual" required> Anual</label>
+      <label><input type="radio" name="facturacion" value="trimestral" required> Trimestral</label>
+      <label><input type="radio" name="facturacion" value="mensual" required> Mensual</label>
+    </fieldset>
+    <fieldset>
+      <legend>Cree una cuenta de administrador</legend>
+      <label for="username">Nombre de usuario<span class="required">*</span></label>
+      <input type="text" id="username" name="username" required>
+      <div class="password">
+       <label for="password">Contraseña <span class="required">*</span></label>
+       <input type="password" id="password" name="password" minlength="8" required>
+       <label for="confirm_password">Repetir contraseña<span class="required">*</span></label>
+       <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+    </div>
+       <span class="password-info">La contraseña debe tener un mínimo de 8 caracteres</span>
+    </fieldset>
+    <fieldset>
+      <legend>Datos del administrador</legend>
+      <div class="nombre-apellido">
+        <label for="nombre">Nombre<span class="required">*</span></label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="apellido">Apellido<span class="required">*</span></label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      <div class="tel-email">
+      <label for="telefono">Teléfono<span class="required">*</span></label>
+      <input type="tel" id="telefono" name="telefono" required>
+      <label for="email">Correo electrónico<span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <label for="fecha_nacimiento">Fecha de nacimiento</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    <div class="nombre-tamaño">
+      <label for="nombre_empresa">Nombre de la empresa</label>
+      <input type="text" id="nombre_empresa" name="nombre_empresa">
+      <label for="tamano_emplea">Número de trabajadores</label>
+      <select id="tamano_emplea" name="tamano_emplea" required>
+        <option value="" selected disabled>Escoja una opción de la lista</option>
+        <option value="menos de 50 trabajadores">Menos de 50 trabajadores</option>
+        <option value="50 a 99">50 a 99</option>
+        <option value="100 a 499">100 a 499</option>
+        <option value="más de 500">Más de 500</option>
+      </select>
+    </div>
+    </fieldset>
+    <p>
+      INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE BIG CLOUD. <b>Finalidades:</b> recogida de datos..
+      <b>Legitimacióm:</b>consentimiento del interesado. <b>Derechos:</b>puede retirar su concentimiento..info@bigcloud.confirm_password
+    </p>
+    <label>
+      <input type="checkbox" id="checkbox" name="checkbox" required>
+      He leído y acepto la política de privacidad
+    </label>
+    <button>Contratar</button>
+  </form>
+</body>
+</html>
+
+

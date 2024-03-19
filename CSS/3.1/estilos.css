@@ -1,0 +1,43 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilos para los títulos principales y secundarios */
+.title {
+    color: #4CAF50; /* Verde claro */
+}
+
+.highlight {
+    color: #4CAF50; /* Verde claro */
+}
+
+/* Estilos para el texto en cursiva */
+i {
+    font-style: italic;
+}
+
+/* Estilos para el texto en negrita */
+strong {
+    font-weight: bold;
+}
+
+/* Estilos para el texto en cursiva y negrita */
+strong i {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Estilos para el texto en azul */
+.blue {
+    color: #0074D9; /* Azul */
+}
+
+/* Estilos para las citas */
+blockquote {
+    color: #0074D9; /* Azul */
+    font-style: italic;
+}

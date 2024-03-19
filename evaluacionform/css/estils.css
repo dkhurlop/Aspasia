@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Selectors necessaris per preparar un sticky footer*/
+html, body {
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+/**************************
+Selectors de tipus
+***************************/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font: 400 16px/1.6 'Merriweather', serif;
+    background-color: rgb(245, 246, 240);
+    color: rgb(2, 15, 20);
+    /* Les dues últimes propietats en aquesta regla són necessàries per crear un sticky footer*/
+    display: flex;
+    flex-direction: column;
+}
+.lema {
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+}
+p img{
+    margin: 0px 5px -5px 0;
+    width: 15px;
+}
+p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    flex: 1;
+    margin-left: 20px;
+    width: 100%;
+}
+label {
+    text-align: left;
+    display: block;
+}
+input, select {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+span {
+    color: rgb(255, 80, 50);
+}
+.privacitat {
+    font-size: 8px;
+    display: flex;
+}
+.privacitat input {
+    width: 9px;
+    margin-right: 5px;
+}
+.privacitat label {
+    font-size: 7px;
+}
+.registrate {
+    display: flex;
+    text-align: center;
+    font-size: 8px;
+    background-color: rgb(255, 80, 50);
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    cursor: pointer; 
+}
+button:hover {
+    background-color: rgb(255, 80, 50);
+    text-decoration: underline;
+}
+
+/* Estilos para dispositivos más grandes */
+@media screen and (min-width: 601px) {
+
+    .section-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .columnas {
+            display: flex;
+            width: 70%;
+    }
+    .lema {
+        flex: 1;
+        font-weight: bold;
+    }
+    form {
+        flex: 1;
+    }
+}
+
+/*Canvi de disseny: breakpoint en 768 píxels per augmentar la mida de titulars i paràgrafs quan el dispositiu disposi de 768 píxels o més*/
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+/*Classe per aconseguir que les imatges adaptin la seva mida al contenidor*/
+.imgFluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Classe per amagar un element i que sigui només visible als lectors de pantalla*/
+.sr {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+/**************************
+Contingut del header i
+del menú de navegació
+***************************/
+/* Header */
+header {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+header a {
+    color: rgb(2, 15, 20);
+    text-decoration: none;
+}
+header a:hover {
+    color: rgba(2, 15, 20, 0.5);
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+h1 span:last-child {
+    font-weight: 400;
+    font-style: italic;
+}
+/* Menú de navegació i botó d'inici de sessió */
+nav {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav ul {
+    list-style-type: none;
+}
+.login {
+    order: -1;
+}
+.login a {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 80, 50);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.login a:hover {
+    color: rgb(2, 15, 20);
+}
+/*Canvi de disseny: breakpoint en 768 píxels */
+@media (min-width: 768px) {
+    header {
+        padding-top: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .login {
+        order: 0;
+    }
+    h1 {
+        margin-top: 0;
+        line-height: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+
+/**************************
+Contingut principal de la
+pàgina
+***************************/
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section:first-child {
+    width: 100%;
+}
+.flexContainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:last-child {
+    margin-top: 80px;
+}
+/*Canvi de disseny: breakpoint en 768 píxels */
+@media (min-width: 768px) {
+    section:first-child {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flexContainer {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexContainer div {
+        flex-basis: 15%;
+    }
+    p img{
+        width: 20px;
+    }
+}
+
+/**************************
+Contingut del footer
+***************************/
+footer {
+    padding: 50px 15px 30px 15px;
+    background-color: rgb(67, 58, 68);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(255, 255, 255);
+    /*Aquesta propietat és necessària per a preparar el sticky footer*/
+    flex-shrink: 0;
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(255, 80, 50);
+}
+footer ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+footer p {
+    margin-bottom: 0;
+}
+.goTop {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+/*Canvi de disseny: breakpoint en 768 píxels */
+@media (min-width: 768px) {
+    footer p {
+        text-align: left;
+        font-size: 1rem;
+    }
+    .footerFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ul {
+        display: flex;
+    }
+    footer ul li::after {
+        content: "·";
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer ul li:last-child::after {
+        content:"";
+        padding: 0;
+    }
+}
+
+/**************************
+Estils per a la secció
+del formulari de registre
+***************************/
+
+
+

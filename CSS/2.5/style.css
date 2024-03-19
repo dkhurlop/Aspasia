@@ -1,0 +1,13 @@
+.principal {
+    color: red;
+    font-size: 150%;
+}
+
+.secundario {
+    color: green;
+    font-size: 110%;
+}
+
+.secundario p {
+    background-color: yellow;
+}

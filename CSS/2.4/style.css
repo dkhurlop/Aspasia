@@ -1,0 +1,12 @@
+#novedades {
+    background-color: yellow;
+}
+
+#novedades h1 {
+    color: red;
+}
+
+#xFashion h3,
+#tMotion h3 {
+    color: green;
+}

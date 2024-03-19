@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  aside {
+    flex: 1;
+    margin-left: 20px;
+  }
+  fieldset {
+    margin-bottom: 20px;
+  }
+  .required {
+    color: red;
+  }
+  .password-info {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #666;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nombre-apellido, .password,.tel-email, .nombre-tamaño {
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+    

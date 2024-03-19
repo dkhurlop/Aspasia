@@ -1,0 +1,90 @@
+/*Estils per a la pàgina Objectius Globals de l'Agenda 2030 de la ONU */
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/1.6 'Libre Franklin', sans-serif;
+    color: rgb(0,0,0);
+    background-color: white;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1em;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    padding: 15px 0;
+}
+
+.flex-3cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    list-style: none;
+}
+
+.flex-3cols li {
+    width: 35%;
+    text-align: center; 
+}
+
+.flex-3cols img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-4cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.flex-4cols li {
+    width: 20%;
+}
+
+.flex-4cols img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    padding: 30px;
+}
+
+/*Contingut del footer*/
+
+footer {
+    font-size: 0.9rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}

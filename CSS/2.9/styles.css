@@ -1,0 +1,39 @@
+.Div1 {
+    width: 300px;
+    height: 200px;
+    background-image: url('imagen1.jpg');
+    background-color: #ffcccc;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Div2 {
+    width: 300px;
+    height: 200px;
+    background-image: url('imagen2.jpg');
+    background-color: #ccffcc;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Div3 {
+    width: 300px;
+    height: 200px;
+    background-image: url('/CSS/2.9/img/road-908176_1280.webp');
+    background-color: #ccccff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Div4 {
+    width: 300px;
+    height: 200px;
+    background-image: url('/CSS/2.9/img/road-908176_1280.webp');
+    background-color: #ffffcc;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

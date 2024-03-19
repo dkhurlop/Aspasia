@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    text-align: start;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    margin-left: 13em;  
+}
+
+nav ul li {
+    display: inline;
+}
+
+.a1{
+    color: white;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+section {
+    width: 60%;
+    margin-left: 15em;
+}
+
+h1 {
+    margin-left: 10em;
+}
+
+h1, h2 {
+    color:rgba(75, 75, 224, 0.77);
+}
+
+.L2 {
+    background-color: rgb(227, 225, 225);
+    width: 60%;
+    margin-left: 15em;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    background-image: url('img/icono-autor.png'); 
+    background-repeat: no-repeat; 
+    background-size: 40px ;
+    background-position: right;
+
+}
+
+#pais {
+    list-style-image: url('img/icono-paises.png');
+    margin-left: 16em;
+}
+
+.cadena{
+    list-style-image: url(img/icono-cadenas.png);
+}
+
+li{
+    list-style-image: none;
+}
+
+.L2 li {
+    display: inline;
+    padding-right: 20px; 
+}
+
+a{
+    color: rgb(252, 142, 64);
+    text-decoration: none;
+}
+
+img {
+    display: block; 
+    margin: 0 auto;
+    border: 2px solid black; 
+    border-radius: 8px; 
+    padding: 5px; 
+    width: 30em;
+    height: 20em;
+    
+}
+
+q {
+    font-weight:bolder;
+}
+
+blockquote{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.pfoot {
+    background-color:rgba(75, 75, 224, 0.77);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 0%;
+    padding-left: 15em;
+}

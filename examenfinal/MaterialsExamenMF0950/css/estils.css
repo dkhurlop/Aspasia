@@ -1,0 +1,289 @@
+/*Estils per a MuViRT */
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,600');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/1.6 'Libre Franklin', sans-serif;
+    background-color: rgb(245,246,240);
+    color: rgb(2,15,20);
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+/****************************
+Contenidors del lloc
+*****************************/
+main {
+    width: 100%;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Les regles que va a continuació aconsegueixen que els continguts dins de .contaninerfluid o .container d'adaptin als diversos dispositius*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+/****************************
+Contingut del header
+*****************************/
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    
+}
+/* Menú de navegació i botó d'inici de sessió */
+.header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 2%;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.header ul li:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    font-size: 10px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.img-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-section li {
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.img-section li:last-child {
+    margin-right: 0;
+}
+
+.img-section img {
+    width: 100%;
+    height: auto;
+}
+
+.img-section figcaption {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.img-section figcaption span {
+    display: block;
+    font-size: 0.7rem;
+    color:  rgb(255, 80, 50);
+}
+
+/****************************
+Formulari
+*****************************/
+
+form {
+    font-size: 10px;
+    flex: 1;
+    margin: 0 auto;
+    width: 50%;
+}
+label {
+    text-align: left;
+    display: block;
+}
+input, select {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+span {
+    color: rgb(255, 80, 50);
+}
+p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+.privacitat {
+    font-size: 8px;
+    display: flex;
+}
+.privacitat input {
+    width: 9px;
+    margin-right: 5px;
+}
+.privacitat label {
+    font-size: 7px;
+}
+.registrate {
+    display: flex;
+    text-align: center;
+    font-size: 8px;
+    background-color: rgb(255, 80, 50);
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    cursor: pointer; 
+}
+button:hover {
+    background-color: rgb(255, 80, 50);
+    text-decoration: underline;
+}
+
+/****************************
+Contingut del footer
+*****************************/
+footer {
+    padding: 1rem;
+    background-color: rgb(67, 58, 68);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(255, 255, 255);
+    /*Aquesta propietat és necessària per a preparar el sticky footer*/
+    flex-shrink: 0;
+}
+
+.containerFluid {
+    width: 100%;
+    font-size: 10px;
+}
+
+.containerFluid p {
+    font-size: 10px;
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(255, 80, 50);
+}
+footer ul {
+    list-style-type: none;
+}
+footer p {
+    margin-bottom: 0;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    
+    footer p {
+        text-align: left;
+        font-size: 1rem;
+        padding: 0%;
+        margin: 0%;
+    }
+    .footerFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ul {
+        display: flex;
+        padding: 1rem 0;
+    }
+    footer ul li::after {
+        content: "·";
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    footer ul li:last-child::after {
+        content:"";
+        padding: 0;
+    }
+}
+  
+@media (min-width: 768px) {
+    
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }        
+    
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    footer p {
+        text-align: left;
+        font-size: 1rem;
+    }
+    .footerFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ul {
+        display: flex;
+    }
+    footer ul li::after {
+        content: "·";
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    footer ul li:last-child::after {
+        content:"";
+        padding: 0;
+    }
+    
+}
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    
+}
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+}

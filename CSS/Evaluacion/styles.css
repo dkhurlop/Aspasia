@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px/1.6 'Roboto', sans-serif;
+    color: #242424;
+    line-height: 1.6;
+}
+
+.container{
+    width: 90%;
+    max-width: 970px;
+    margin: 50px auto;
+}
+
+header{
+    text-align: center;
+    height: 230px;
+}
+
+h1{
+    font-size: 2em;
+    padding: 0.5em 0;
+    background-color: #f3ddf1;
+    border-top: 2px solid  #242424;
+    border-bottom: 2px solid  #242424;
+}
+
+nav {
+    text-align: center;
+    border-bottom: 1px solid #999;
+    margin-bottom: 50px;
+  }
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+  }
+  
+nav ul li a{
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #b709a9;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: none;
+  }
+  
+nav ul li a:hover {
+    text-decoration: none;
+    border-bottom: none;
+  }
+  
+nav ul li.in a {
+    color: #999;
+  }
+  
+h2, h3 {
+    color: #b709a9;
+    font-weight: 700;
+    margin:1.5em 0;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1.1em;
+    text-align: justify;
+    hyphens: auto;
+}
+
+blockquote {
+    border-left: 4px solid #b709a9;
+    padding-left: 15px;
+}
+
+blockquote p {
+    font-style: italic;
+}
+  
+abbr {
+    text-decoration: none;
+  }
+
+q {
+    quotes:"«" "»";
+    font-weight: 700;
+}
+
+cite {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+}
+
+a {
+    color: #b709a9;
+    text-decoration: none;
+    border-bottom: 1px dotted #b709a9;
+  }
+
+a:hover {
+    border-bottom: 1px solid #b709a9;
+  }
+
+ol {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+ol ul {
+    list-style-type: square;
+    margin-left: 30px;
+  }
+  
+ol ul ul {
+    list-style-type: none;
+  }
+ 
+ol ul ul li {
+    border-bottom: 1px solid #b709a9;
+  }
+
+dl dt {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b709a9;
+  }
+  
+dl dd {
+    margin-left: 30px;
+  }  
+
+figure {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+figure img,
+figure video,
+figure audio {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+iframe {
+    border: none;
+}
+
+footer {
+    height: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 2px solid #242424;
+  }
+  
+footer p {
+    text-align: right;
+    font-size: 0.8em;
+  }

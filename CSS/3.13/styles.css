@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+
+.rojo {
+    color: #cc0000;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #999;
+}
+
+nav ul li a:hover {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    border-bottom: 1px solid #999;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+dl dt {
+    color: #cc0000;
+}
+
+dl dt + dd {
+    color: #000;
+}
+

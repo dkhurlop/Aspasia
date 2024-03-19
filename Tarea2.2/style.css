@@ -1,0 +1,39 @@
+/* Document CSS per a l'arxiu George Harrison */
+
+
+body {
+	width: 900px;
+	margin: 50px auto;
+	font: 14px/1.5 Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2 {
+	color: #900;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+audio {
+	width: 400px;
+}
+
+video {
+	width: 420px;
+	height: 315px;
+}
+
+video, iframe {
+	border: 10px solid #990000;
+}
+

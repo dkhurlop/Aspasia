@@ -1,0 +1,27 @@
+.div-con-imagen {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#primera {
+    background-image: url('/CSS/2.8/img/road-908176_1280.webp');
+    background-color: #ffcccc;
+}
+
+#segunda {
+    background-image: url('/CSS/2.8/img/road-908176_1280.webp');
+    background-color: #ccffcc;
+}
+
+#tercera {
+    background-image: url('/CSS/2.8/img/road-908176_1280.webp');
+    background-color: #ccccff;
+}
+
+#cuarta {
+    background-image: url('/CSS/2.8/img/road-908176_1280.webp');
+    background-color: #ffffcc;
+}
